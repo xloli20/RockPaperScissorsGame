@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body class="wrapper1">
+    <div>
+        <!-- player -->
+        <audio id="player" autoplay loop>
+            <source src="audio/pikachu_song.mp3"
+                type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            var audio = document.getElementById("player");
+            audio.volume = 0.2;
+          </script>
+        <div>
+            <img src="images/ic-unmute.png" alt="" class="mute">
+        </div>
+
+        <!-- logo -->
+        <div class="logo1">
+            <h1>WELCOME TO ROCK PAPER SCISSORS GAME </h1>
+        </div>
+
+        <!-- form -->
+        <div class="form">
+            <h2>ENTER YOUR NICKNAME</h2>
+            <div class="inputs">
+                <input type="text" placeholder="NICKNAME" id="nickname" maxlength="10">
+                <input type="submit" id="play" value="PLAY">
+            </div>
+        </div>
+
+
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
